@@ -52,7 +52,7 @@ else if (options.categories === "transfer") {
             name: "transferamount"
         }]);
     balance -= transfer.transferamount;
-    console.log(" CONGRAGULATIONS!! your amount is transfer and your current balance is" + balance);
+    console.log(` CONGRAGULATIONS!! your amount is transfer and your current balance is ${balance}`);
 }
 else if (options.categories === "fast cash") {
     const fastcash = await inquirer.prompt([{
@@ -63,5 +63,5 @@ else if (options.categories === "fast cash") {
         }]);
     balance -= fastcash.cash;
     //firt show transfer amount and then remaining balance.
-    console.log("Your amount is transfer " + fastcash.cash + "and your remaining balance is" + balance);
+    console.log(`Your amount is transfer  ${fastcash.cash} and your remaining balance is ${balance}`);
 }

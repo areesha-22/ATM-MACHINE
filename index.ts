@@ -47,7 +47,7 @@ else if(options.categories==="withdraw"){
     if(balance>amountans.amount){
     
         balance -=amountans.amount
-    
+
     console.log('your remaining balance is ' + balance)}
 
     else{
@@ -63,7 +63,7 @@ else if (options.categories==="transfer"){
         name:"transferamount"
     }])
      balance -=transfer.transferamount
-     console.log(" CONGRAGULATIONS!! your amount is transfer and your current balance is" +balance)
+     console.log(` CONGRAGULATIONS!! your amount is transfer and your current balance is ${balance}`)
 
 }
 
@@ -77,6 +77,6 @@ else if(options.categories==="fast cash"){
     }])
     balance -=fastcash.cash
     //firt show transfer amount and then remaining balance.
-    console.log("Your amount is transfer " + fastcash.cash+"and your remaining balance is"+balance)
+    console.log(`Your amount is transfer  ${fastcash.cash} and your remaining balance is ${balance}`)
 }
 
